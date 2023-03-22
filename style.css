@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  body{
+    background-color: rgb(94, 97, 139);
+  }
+
+
+  
+  h1,form{
+    
+    width: 600px;
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  
+  }
+
+  form{
+
+    background-color: #e4a6f6;
+  }
+  h1{
+    font-family: 'Courier New', Courier, monospace;
+    color:  #baf5fc;  
+  }
+  form input, form button{
+     
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background: white;
+  }
+  
+  form button{
+    color: rgb(85, 23, 23);
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+
+   .todo-container{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+
+   }
+
+   .todo-list{
+    min-width: 50%;
+    list-style: none;
+   }
+
+   .todo{
+
+    margin: 0.5rem;
+    background-color: white;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+
+   }
+   .delete{ 
+      width: 19px;
+      border-radius: 3px;
+      margin: 0.5rem;
+      background: bisque;
+      margin-top: 0.2rem;
+      float:right;
+   }
+   .delete:hover {
+    background: #f3ebeb;
+    cursor: pointer;
+  }
+
+   .todo li{
+    flex: 1;
+    justify-content: space-between;
+   } 
+   
+   .task-checked{
+   
+    opacity: 0.5;
+   }
+   .completed{
+    text-decoration: line-through;
+    background-color: #b5fba9;
+    transition: all 1.2s ease;
+   }
+
+   /*  Select ToDo Filter Styling ....*/
+
+
+   .todo-feature{
+    width: 600px;
+    min-height: 1vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    border: 2px solid black;
+    background-color: #baf5fc;
+  
+
+   }
+   select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    outline: none; 
+   }
+
+   .select{
+    width: 200px;
+    position: relative;
+    overflow: hidden;
+   }
+
+   select{
+    color: black;
+    width: 20rem;
+    cursor: pointer;
+    padding: 1rem;
+   }
+
+   .select::after{
+    content: "\25BC";
+    position: absolute;
+    background: #f9f5f5;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    pointer-events: none;
+   }
+   
+
+
+    #total-tasks {
+
+      width: 110px;
+      border: 2px solid black;
+      margin-bottom: 5px;
+      font-size: 13px;
+      margin-left: 5px;
+      color: rgb(6, 6, 6);
+      background-color: white;
+    }
+
+  
+  
+   
+  
+   @media screen and (max-width: 580px){
+
+    
+
+
+    h1,form{
+    
+      width: 400px;
+      min-height: 20vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+     
+      
+    
+    }
+  
+    form input, form button{
+
+      padding: 0.5rem;
+      font-size: 1.5rem;
+      border: none;
+      background: white;
+    }
+
+    .todo-feature{
+      width: 400px;
+      min-height: 1vh;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: auto;
+  
+     }
+
+     .select{
+      width: 150px;
+      position: relative;
+      overflow: hidden;
+     }
+  
+     select{
+      color: black;
+      width: 20rem;
+      cursor: pointer;
+      padding: 1rem;
+     }
+
+
+   }
